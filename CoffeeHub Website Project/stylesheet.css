@@ -1,0 +1,318 @@
+*{
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Serif', Courier, monospace;
+}
+div.nav-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-around;
+}
+div.navbar_img{
+    width: auto;
+    height: auto;
+    margin-bottom: 2px;
+    /* overflow: hidden; */
+}
+h2.name{
+    display: block;
+    text-align: left;
+    /* border: 1px solid white; */
+    color: rgb(212, 90, 116);
+    font-size: 15px;
+}
+img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    filter: invert(100%);
+}
+a.main_btn{
+    text-decoration: none;
+    background-color: rgb(157, 161, 114);
+    color: white;
+    padding: 5px;
+    margin: 0px 2px;
+    border-radius: 5px;
+}
+div.navitems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+}
+div.navitems a{
+    text-decoration: none;
+    background-color :none;
+    text-transform: uppercase;
+    color: rgb(223, 200, 200);
+    padding: 10px;
+}
+div.container div{
+    /* border: 5px solid green; */
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.container img{
+    width: 100%;
+    height: 610px;
+    object-fit: cover;
+}
+div.tag{
+    height: 100px;
+    /* border: 5px solid green; */              /* I use this for aligning the text */
+    background-attachment: fixed;
+    position: absolute;
+    top: 24%;
+    left: 45%;
+    text-align: center;
+}
+ h1{
+    color: burlywood;
+    font-size: 30px;
+}
+p{
+    color: burlywood;
+    font-size: 15px;
+
+}
+div.content-container{
+    /* width: 100%; */    /* Used to testing the width during making responsive */
+    display: flex;
+    /* height: 100%; */         /* Used to testing the width during making responsive */
+    flex-wrap: wrap;
+    background: rgb(22, 17, 17);
+    padding: 15px;
+    justify-content: space-around;
+    align-items: baseline;
+    /* align-items: center; */      /* Used to testing the width during making responsive */
+    overflow: hidden;
+}
+.frames{
+    /* padding: 0px; */
+    margin: 20px;
+    background:linear-gradient(to left ,#752b94 ,#ba5486);
+    box-shadow: 0 0 25px rgba(121, 118, 118, 0.801);
+    width: 300px;
+    height: fit-content;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.menu-title{
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 15px;
+    font-size: 2em;
+    text-decoration: uppercase;
+}
+div.image img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+h1.coffee_name{
+    text-align: center;
+    font-size: 1.75em;
+    color: rgb(161, 159, 159) ;
+}
+p.desc{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    /* color: black; */
+    margin:10px;
+}
+h2.link{
+    text-align: center;
+}
+h2.link button,a.read-more{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: none;
+    background-color: grey;
+    padding: 5px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 3px;
+
+}
+a.main_btn:hover{
+    color: rgb(241, 163, 139);
+}
+div.navitems a:hover{
+    color: rgb(252, 252, 252);
+    background-color: rgb(243, 199, 214);
+    border-radius: 4px;
+}
+@media screen and (max-width:550px){
+    /* div.navitems ,.buttons a{
+        flex-direction: column;
+    } */
+    div.nav-container,div.navitems{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    div.btn{
+        margin-top: 20px;
+    }
+    div.tag{
+        position: inherit;
+    }
+   
+}
+.aboutme_row{
+    display: grid;
+    background-color:rgb(41, 40, 40);
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    /* align-items: center; */
+    padding-bottom: 5px;
+}
+div.boxes{
+    text-align: center;
+    background-color: inherit;
+    margin: 5px;
+}
+#dabbe1{
+    color: rgba(227, 233, 146, 0.753);
+    font-size: 2.75rem;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+#dabbe2{
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-start: 2;
+}
+#dabbe2 p{
+    font-size: larger;
+    color: #c8be94;
+}
+#social_container{
+   /* border: 1px solid red; */        /* I use this for aligning the social media icons */
+    display: flex;
+    grid-column-start: 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-start: 3;
+    justify-content: center;
+}
+.fa{
+    width: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 15px;
+    font-size: 45px;
+}
+.fa-instagram{                      /* FOR INSTAGRAM ICON */
+    color: rgb(176, 209, 196);
+    background: inherit;
+}
+.fa-facebook{                       /* FOR FACEBOOK ICON */            
+    color: rgb(176, 209, 196);
+    background: inherit;
+}
+.fa-snapchat{                /* FOR SNAPCHAT ICON */   
+    color: rgb(176, 209, 196);
+    background: inherit;
+}             
+div.footer-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+}
+div.footer-box{
+    margin: 12px;
+    padding: 2px;
+    width: 160px;
+    height: 40px;
+    /* background-color: chartreuse; */  /* I use this color for testing tha layout */
+    background-color: inherit;
+}                
+#bo-x1{
+    text-align: center;
+    height: 10vh;
+    flex: 1;
+}          
+h1.footer-text{
+    font-family: 'DynaPuff', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(216, 197, 197);
+    font-size: 1.5rem;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+} 
+div.footer-box a{
+    text-decoration: none;
+    color: rgb(253, 241, 241);
+    font-size: 18px;
+    padding: 10px;
+}
+#bo-x7{
+    /* text-align: left; */
+    align-items: center;
+    height: 10vh;
+    /* flex: 1; */
+}   
+#symb{
+    width: 10px;
+    /* padding: 14px; */
+    padding-left: 1px;
+    font-size: 20px;
+    
+}
+.fa-copyright{
+    color: rgb(222, 224, 224);
+    background: inherit;
+
+}   
+@media screen and (max-width: 600px){
+    div.content-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width:1280px){
+    div.footer-box{
+        display: block;
+        text-align: center;
+        }
+        div.footer-navbar{
+            flex-direction: column;
+        }
+}
+@media screen and (max-width:375px){
+    h2.name{
+        width: 100%;
+        text-align: center;
+    }
+}
+    
+
+
+
