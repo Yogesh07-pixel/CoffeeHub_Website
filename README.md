@@ -1,6 +1,5 @@
 # CoffeeHub_Website
 Coffee Hub website made using html css only.
 
-# Owned By
-Yogesh
+# Changing  from static to Dynamic website (work in Progress). 
 
